@@ -105,7 +105,6 @@ class TraderProfile:
         # Volatility
         "UVXY",
         # Crypto (Alpaca supports)
-        "BTCUSD", "ETHUSD",
     ])
 
     def get_dollar_risk(self) -> float:
