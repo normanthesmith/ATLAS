@@ -90,6 +90,7 @@ class AlpacaExecutor:
                 end=end,
                 limit=limit * timeframe_minutes,
                 adjustment="raw",
+                feed="iex",
             )
             bars = self.data_client.get_stock_bars(request)
             if symbol not in bars.data or not bars.data[symbol]:
